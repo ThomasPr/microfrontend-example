@@ -1,0 +1,57 @@
+html {
+  --human-blue: rgb(103, 133, 193);
+  --light-blue: rgb(222, 232, 244);
+  --smart-navy: rgb(15, 28, 80);
+}
+
+[hidden] {
+  /* https://css-tricks.com/the-hidden-attribute-is-visibly-weak/ */
+  display: none !important;
+}
+
+nav {
+  display: flex;
+  background-color: var(--human-blue);
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+
+nav select {
+  color: white;
+  background-color: var(--human-blue);
+  font-size: 1rem;
+  border: 0;
+  padding: 0.5rem;
+}
+
+nav .tab {
+  display: flex;
+  margin-left: 2rem;
+}
+
+nav .tab button {
+  color: white;
+  background-color: var(--human-blue);
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-top: 0.5rem solid var(--human-blue);
+  padding: 0 0.5rem;
+}
+
+nav .tab button::first-letter {
+  text-transform: capitalize;
+}
+
+nav .tab button:hover,
+nav .tab button.active {
+  color: var(--human-blue);
+  background-color: white;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
